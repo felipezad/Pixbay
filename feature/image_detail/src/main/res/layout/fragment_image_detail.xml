@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <com.google.android.material.card.MaterialCardView
+      style="@style/CardViewImageDetail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:orientation="vertical"
+          tools:context=".ImageDetailFragment">
+
+            <ImageView
+              android:id="@+id/ivDetailImage"
+              style="@style/CardViewImageDetailText"
+              android:layout_width="match_parent"
+              android:layout_height="300dp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/tvUserNameDetail"
+              style="@style/CardViewImageDetailText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+              app:helperText="@string/userName"/>
+
+            <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/tvTagsDetails"
+              style="@style/CardViewImageDetailText"
+              android:drawableLeft="@drawable/baseline_tag_24"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+            <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/tvLikesDetails"
+              style="@style/CardViewImageDetailText"
+              android:drawableLeft="@drawable/baseline_thumb_up_24"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+            <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/tvDownloadsDetails"
+              style="@style/CardViewImageDetailText"
+              android:drawableLeft="@drawable/baseline_file_download_24"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+            <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/tvCommentsDetails"
+              style="@style/CardViewImageDetailText"
+              android:drawableLeft="@drawable/baseline_comment_24"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>

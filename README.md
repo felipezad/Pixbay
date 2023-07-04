@@ -1,52 +1,31 @@
 # Pixbay
-Pixbay Api
 
-General project structure
+Pixbay is a simple image search app that uses the Pixbay API.
+It was built using Android Clean Architecture and follows the MVVM pattern. 
+The app is modularized and uses Dependency Injection (Hilt), Kotlin Coroutines, Jetpack Navigation, XML Layouts, and Unit Tests.
 
-The project must be able to compile and run on Android 7.0 and higher
-The app should follow the official Material Design guidelines
-The main language must be Kotlin
-The code must be:
-Organized.
-Efficient.
-Readable.
-Decoupled.
-Follow best practices (e.g. DRY, SOLID)
-Nice to have:
-Configuration changes handling.
-Unit and Instrumented tests.
-CLEAN Architecture.
-This is our tech stack (you're not required to use the same):
-MVVM Architecture
-Android Architecture Components
-Jetpack Compose / Legacy View System with Databinding and ConstraintLayout
-RxJava / Coroutines
-Hilt
-Coil
-Retrofit / Ktor
-Room
-KMM (Multiplatform)
-Prerequisites
-You will need an API key for the Pixabay public web services. It can be retrieved from this page (you must be logged in to see it):
-https://pixabay.com/api/docs/#api_search_images
+## Tradeoffs
 
+Due to time constraints, some features were not implemented in this project. 
+Espresso tests (UI tests) and Jetpack Compose were not included.
+Standard XML layouts were used instead of Jetpack Compose because I have more experience with it and could deliver the project faster. 
+The layout is basic but sufficient to demonstrate the project's architecture.
 
-Requirements
-The user should be able to search for images, entering one or more words in a text field
-Request the Pixabay API to show the images associated with the text provided by the user and parse the JSON response.
-Display a list of results. Each entry should show:
-A thumbnail of the image.
-The Pixabay username.
-A list of the image’s tags.
-Cache the result for offline handling.
-A click on the list item opens a dialog asking the user if he wants to see more details. In case of a positive answer, a new detail screen should be
-opened.
-The detail screen should contain:
-A bigger version of the image.
-The name of the user.
-A list of the image’s tags.
-The number of likes.
-The number of downloads.
-The number of comments.
-When the app starts, it should trigger a search for the string “fruits”.
-If you have any final comments about your result, please let us know, by creating a file called "README.md" inside the root directory of the proj
+## Description
+
+The project is structured into three modules: app, core, and feature. 
+The app module is the main module where the UI is connected. 
+The core module includes the database, model, network, storage, and navigation sub-modules. 
+The feature module includes the search and detail sub-modules.
+
+The app follows the Android Clean Architecture and MVVM pattern. The core module includes the database, model, network, storage, and navigation sub-modules. The feature module includes the search and detail sub-modules.
+
+## How to run
+
+To run the project, you need to create a Pixbay API key and add it to the `NetworkModule` file. Instead of providing a local.properties file, the project to use the `NetworkModule` for simplicity and left their own API Key there.
+
+## Video
+
+A sample run of the app is available for viewing.
+
+video/device-2023-07-09-233106.mp4

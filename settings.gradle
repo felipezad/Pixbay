@@ -14,3 +14,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Pixbay"
 include ':app'
+include ':core:network'
+include ':feature:search'
+include ':core:database'
+include ':feature:image_detail'
+include ':core:model'
+include ':core:navigation'
+include ':core:storage'

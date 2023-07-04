@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  style="@style/CardViewImageItem"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+        <TextView
+          android:id="@+id/tvTags"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:hint="Tags"
+          app:layout_constraintEnd_toEndOf="@id/ivThumbnail"
+          app:layout_constraintStart_toStartOf="@id/ivThumbnail"
+          app:layout_constraintTop_toBottomOf="@+id/ivThumbnail" />
+
+        <TextView
+          android:id="@+id/tvUser"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:hint="User"
+          app:layout_constraintEnd_toEndOf="@id/ivThumbnail"
+          app:layout_constraintStart_toStartOf="@id/ivThumbnail"
+          app:layout_constraintTop_toBottomOf="@+id/tvTags" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/ivThumbnail"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.divider.MaterialDivider
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/tvUser" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

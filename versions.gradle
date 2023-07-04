@@ -1,0 +1,46 @@
+ext {
+    // AndroidX libraries
+    coreKtxVersion = "1.10.1"
+    appCompatVersion = "1.6.1"
+    materialVersion = "1.9.0"
+    constraintLayoutVersion = "2.1.4"
+    lifecycleVersion = "2.6.1"
+
+    // Testing libraries
+    junitVersion = "4.13.2"
+    testExtJunitVersion = "1.1.5"
+    espressoCoreVersion = "3.5.1"
+    androidXTestVersion = "1.5.2"
+    androidXRulesTestVersion = "1.5.0"
+
+    // Architecture components
+    activityKtxVersion = "1.7.2"
+    fragmentKtxVersion = "1.6.0"
+    lifecycleViewModelKtxVersion = "2.6.1"
+
+    // Kotlin coroutines
+    coroutinesVersion = "1.6.4"
+
+    // Jetpack Compose
+    composeUiVersion = "1.4.3"
+    composeMaterialVersion = "1.4.3"
+    composeUiToolingVersion = "1.4.3"
+
+    // Retrofit
+    retrofitVersion = "2.9.0"
+    retrofitGsonConverterVersion = "2.9.0"
+
+    // Hilt
+    hiltVersion = "2.46.1"
+
+    // Navigation
+    navVersion = "2.6.0"
+
+    // Glide
+    glideVersion = "4.12.0"
+
+    //Room
+    roomVersion = "2.5.2"
+
+    androidMaterialVersion = "1.9.0"
+}
